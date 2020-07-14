@@ -5,7 +5,7 @@
 1. [Real World Problem](#real-world-problem)
 2. [Getting Started](#getting-started)
 3. [Author(s)](#author(s))
-3. [License](#license)
+3. [LICENSE.md](#license.md)
 4. [Resources](#resources)
 
 ## Real World Problem: Google Maps 🗺️
@@ -19,7 +19,7 @@
 ### Problem/Solution #3: 
 <p>Shortest path from each location to every other locations [Floyd-Warshall]</p>
 
-[![Blog Post](https://medium.com/@pjriddell22)](https://medium.com/@pjriddell22)
+[Blog Post](https://medium.com/@pjriddell22)
 
 ## Getting Started
 ### Installing
@@ -40,8 +40,7 @@ python3 -m unittest discover
 ## Author(s)
 - Padyn Riddell -<i>initial work</i>- BEW Engineer
 
-## License
-[![LICENSE.md](https://github.com/squeaky1273/CS-2.2-Final/blob/master/LICENSE)](https://github.com/squeaky1273/CS-2.2-Final/blob/master/LICENSE)
+## [LICENSE.md](https://github.com/squeaky1273/CS-2.2-Final/blob/master/LICENSE)
 
 ## Resources
 - https://brilliant.org/wiki/dijkstras-short-path-finder/
