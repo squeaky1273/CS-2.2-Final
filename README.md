@@ -1,35 +1,49 @@
-# Graph Modeling with Google Maps
+# Graph Modeling
 
-## Description
+## 📚 Table of Contents
 
-## Real World Problem: Google Maps
+1. [Real World Problem](#real-world-problem)
+2. [Getting Started](#getting-started)
+3. [Author(s)](#author(s))
+3. [License](#license)
+4. [Resources](#resources)
+
+## Real World Problem: Google Maps 🗺️
 
 ### Problem/Solution #1: 
-Shortest Path to vist every location from where you are now [Dijkstra's Algorithm]
+<p>Shortest Path to vist every location from where you are now [Dijkstra's Algorithm]</p>
 
 ### Problem/Solution #2: 
-Fastest Route (Longer path with no traffic/shorter path with a lot of traffic) [Kruskal's Algorithm]
+<p>Fastest Route (Longer path with no traffic/shorter path with a lot of traffic) [Kruskal's Algorithm]</p>
 
 ### Problem/Solution #3: 
-Shortest path from each location to every other locations [Floyd-Warshall]
+<p>Shortest path from each location to every other locations [Floyd-Warshall]</p>
 
-## Installation
+[![Blog Post](https://medium.com/@pjriddell22)](https://medium.com/@pjriddell22)
+
+## Getting Started
+### Installing
 ```
 git clone https://github.com/squeaky1273/CS-2.2-Final.git
 ```
 
-## Running on Terminal
-### Run Code
+### Running on Terminal
+<h4>Run Code</h4>
 ```
 python3 main.py
 ```
-### Run Tests
+<h4>Run Tests</h4>
 ```
 python3 -m unittest discover
 ```
 
-## Medium Post
-https://medium.com/@pjriddell22
-
 ## Author(s)
 - Padyn Riddell -<i>initial work</i>- BEW Engineer
+
+## License
+[![LICENSE.md](https://github.com/squeaky1273/CS-2.2-Final/blob/master/LICENSE)](https://github.com/squeaky1273/CS-2.2-Final/blob/master/LICENSE)
+
+## Resources
+- https://brilliant.org/wiki/dijkstras-short-path-finder/
+- https://www.tutorialspoint.com/data_structures_algorithms/kruskals_spanning_tree_algorithm.htm
+- https://www.programiz.com/dsa/floyd-warshall-algorithm
