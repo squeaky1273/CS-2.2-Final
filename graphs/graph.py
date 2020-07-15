@@ -76,7 +76,7 @@ def fastest_route(self):
         else:
             continue
 
-    # Return the solution list.
+    # Return the route list.
     return route_list
 
 def location_to_location(self):
@@ -86,14 +86,14 @@ def location_to_location(self):
     paths from each location on the map to each other locations.
     """
     all_locations = self.get_vertices()
-    all_vertex_id = [vertex.get_id() for vertex in all_locations]
+    all_location_vertex_id = [vertex.get_id() for vertex in all_locations]
 
     vertex_index_map = {}
-    for index in range(len(all_vertex_id)):
-        location_id = all_vertex_id[index]
+    for index in range(len(all_location_vertex_id)):
+        location_id = all_location_vertex_id[index]
         vertex_index_map[location_id] = index
 
-    distances_graph = [[float("inf") for _ in all_vertex_id] for _ in all_vertex_id]
+    distances_graph = [[float("inf") for _ in all_location_vertex_id] for _ in all_location_vertex_id]
 
     for vertex in all_locations:
         vertex_index = vertex_index_map[vertex.get_id()]
@@ -102,7 +102,7 @@ def location_to_location(self):
             neighbor_index = vertex_index_map[neighbor.get_id()]
             distances_graph[vertex_index][neighbor_index] = weight
 
-    for k in range(len(all_vertex_id)):
-        for i in range(len(all_vertex_id)):
-            for j in range(len(all_vertex_id)):
+    for k in range(len(all_location_vertex_id)):
+        for i in range(len(all_location_vertex_id)):
+            for j in range(len(all_location_vertex_id)):
                 distances_graph[i][j] = min(distances_graph[i][j], distances_graph[i][k] + distances_graph[k][j])

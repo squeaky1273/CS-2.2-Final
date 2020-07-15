@@ -1,11 +1,7 @@
 class Vertex(object):
-    
     def __init__(self, vertex_id):
         """
         Initialize a vertex and its neighbors dictionary.
-        
-        Parameters:
-        vertex_id (string): A unique identifier to identify this vertex.
         """
         self.id = vertex_id
         self.neighbors_dict = {} # id -> (obj, weight)
@@ -13,9 +9,6 @@ class Vertex(object):
     def add_neighbor(self, vertex_obj, weight):
         """
         Add a neighbor by storing it in the neighbors dictionary.
-        Parameters:
-        vertex_obj (Vertex): An instance of Vertex to be stored as a neighbor.
-        weight (number): The weight of this edge.
         """
         if vertex_obj.get_id() in self.neighbors_dict.keys():
             return # it's already a neighbor
@@ -45,12 +38,9 @@ class Vertex(object):
         return f'{self.id} adjacent to {neighbor_ids}'
 
 class Graph:
-    INFINITY = float('inf')
     def __init__(self, is_directed=True):
         """
         Initialize a graph object with an empty vertex dictionary.
-        Parameters:
-        is_directed (boolean): Whether the graph is directed (edges go in only one direction).
         """
         self.vertex_dict = {}
         self.is_directed = is_directed
@@ -58,11 +48,6 @@ class Graph:
     def add_vertex(self, vertex_id):
         """
         Add a new vertex object to the graph with the given key and return the vertex.
-        
-        Parameters:
-        vertex_id (string): The unique identifier for the new vertex.
-        Returns:
-        Vertex: The new vertex object.
         """
         if vertex_id in self.vertex_dict.keys():
             return False # it's already there
@@ -80,10 +65,6 @@ class Graph:
     def add_edge(self, vertex_id1, vertex_id2, weight):
         """
         Add an edge from vertex with id `vertex_id1` to vertex with id `vertex_id2`.
-        Parameters:
-        vertex_id1 (string): The unique identifier of the first vertex.
-        vertex_id2 (string): The unique identifier of the second vertex.
-        weight (number): The edge weight.
         """
         all_ids = self.vertex_dict.keys()
         if vertex_id1 not in all_ids or vertex_id2 not in all_ids:
@@ -103,7 +84,6 @@ class Graph:
         vertex1_root = self.find(parent_map, vertex_id1)
         vertex2_root = self.find(parent_map, vertex_id2)
         parent_map[vertex1_root] = vertex2_root
-
 
     def find(self, parent_map, vertex_id):
         """Get the root (or, group label) for vertex_id."""

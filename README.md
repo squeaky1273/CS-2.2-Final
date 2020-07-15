@@ -19,7 +19,7 @@
 ### Problem/Solution #3: 
 <p>Shortest path from each location to every other locations [Floyd-Warshall]</p>
 
-[Blog Post](https://medium.com/@pjriddell22)
+Check out this [Medium Blog Post](https://medium.com/@pjriddell22)
 
 ## Getting Started
 ### Installing
