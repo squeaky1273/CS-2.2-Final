@@ -11,7 +11,7 @@
 ## Real World Problem: Google Maps 🗺️
 
 ### Problem/Solution #1: 
-<p>Shortest Path to vist every location from where you are now [Dijkstra's Algorithm]</p>
+<p>Shortest Path to visit every location from where you are now [Dijkstra's Algorithm]</p>
 
 ### Problem/Solution #2: 
 <p>Fastest Route (Longer path with no traffic/shorter path with a lot of traffic) [Kruskal's Algorithm]</p>
