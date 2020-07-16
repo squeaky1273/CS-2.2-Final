@@ -19,7 +19,7 @@
 ### Problem/Solution #3: 
 <p>Shortest path from each location to every other locations [Floyd-Warshall]</p>
 
-Check out this [Medium Blog Post](https://medium.com/@pjriddell22)
+Check out this [Medium Blog Post](https://medium.com/@pjriddell22/graph-theory-w-google-maps-e7092c86ef9c)
 
 ## Getting Started
 ### Installing
